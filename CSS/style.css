@@ -79,3 +79,30 @@ button:hover {
         padding: 20px;
     }
 }
+
+/* Bootstrap form adjustments */
+
+.bootstrap-form .form-control {
+    font-family: inherit;
+}
+
+.bootstrap-form .form-label {
+    margin-bottom: 8px;
+}
+
+.bootstrap-form .form-text {
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.bootstrap-form .btn-primary {
+    background-color: #26364a;
+    border-color: #26364a;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.bootstrap-form .btn-primary:hover {
+    background-color: #405978;
+    border-color: #405978;
+    transform: translateY(-3px);
+}
