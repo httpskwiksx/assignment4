@@ -1,12 +1,23 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f5f7;
     margin: 0;
     color: #222;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+    ), url("../images/bg_photo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
-.navbar {
+
+.task-navbar {
     background-color: #26364a;
     padding: 20px;
     display: flex;
@@ -15,14 +26,14 @@ body {
     flex-wrap: wrap;
 }
 
-.navbar a {
+.task-navbar a {
     color: white;
     text-decoration: none;
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.navbar a:hover {
+.task-navbar a:hover {
     transform: translateY(-4px);
     color: #d6e8ff;
 }
@@ -80,8 +91,6 @@ button:hover {
     }
 }
 
-/* Bootstrap form adjustments */
-
 .bootstrap-form .form-control {
     font-family: inherit;
 }
@@ -107,25 +116,33 @@ button:hover {
     transform: translateY(-3px);
 }
 
-/* Yellow validation state */
 
-.bootstrap-form .form-control.is-warning {
-    border-color: #ffc107;
-    background-color: #fffdf0;
+/* Task 4 - Registration Form */
+
+main.registration-page {
+    max-width: 850px;
 }
 
-.bootstrap-form .form-control.is-warning:focus {
-    border-color: #ffc107;
-    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+.registration-form .form-check-input {
+    width: 1em;
+    height: 1em;
+    padding: 0;
 }
 
-.warning-feedback {
-    display: none;
-    color: #a67c00;
-    font-size: 14px;
-    margin-top: 5px;
+.registration-form .form-check-label {
+    display: inline;
+    font-weight: normal;
 }
 
-.is-warning ~ .warning-feedback {
+.registration-form legend {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.registration-form .validation-group.is-valid .valid-feedback {
+    display: block;
+}
+
+.registration-form .validation-group.is-invalid .invalid-feedback {
     display: block;
 }
