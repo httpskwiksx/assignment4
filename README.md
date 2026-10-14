@@ -3,6 +3,7 @@
 **Course:** Web Technologies (Frontend)  
 **Student:** Ulzhan Musakhan  
 **Group:** SE-2524
+**GitHub pages:** https://httpskwiksx.github.io/assignment4/
 
 ## Project Description
 
